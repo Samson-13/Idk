@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Heading info style */
+.heading h1 {
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 7%;
+  font-size: 5em;
+  text-decoration: underline;
+  margin-bottom: 4%;
+}
+
+/* container style */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+/* Info about the pic */
+.info-all {
+  width: 400px;
+  min-height: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 45% 5.5%;
+}
+
+.info > p {
+  padding: 7% 20px 20px 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Card style for all cards in common */
+.card-all {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  margin: 7px;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+/* Cards style */
+.card-all {
+  transition: 0.45s ease-in-out;
+}
+
+.card-same {
+  width: 450px;
+  height: 750px;
+}
+
+.card1 {
+  background-image: url(https://images.unsplash.com/photo-1558369178-6556d97855d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.card2 {
+  background-image: url(https://images.unsplash.com/photo-1535117399959-7df1714b4202?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.card3 {
+  background-image: url(https://images.unsplash.com/photo-1552550018-5253c1b171e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.card4 {
+  background-image: url(https://images.unsplash.com/photo-1512850183-6d7990f42385?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.card5 {
+  background-image: url(https://images.unsplash.com/photo-1504019853082-9a4cb128c1ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+
+.cardfoot {
+  width: 100%;
+  min-height: 200px;
+  background-image: url(https://images.unsplash.com/photo-1493514789931-586cb221d7a7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+}
+
+/* Cards hover effect */
+.card-all:hover {
+  transform: scale(1.039);
+  z-index: 1;
+}
+
+div:hover .card-all:not(:hover) {
+  opacity: 0.85;
+}
+
+/* information on the cards */
+.container > .card-all > .info-all {
+  padding: 13px;
+  color: white;
+}
+
+/* footer */
+footer {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* MEdia */
+@media (max-width: 900px) {
+  .card-all {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-all {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
